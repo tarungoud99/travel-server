@@ -1,0 +1,28 @@
+### Get All travels
+GET http://localhost:3000/travels HTTP/1.1
+
+### Get travel By Id
+GET http://localhost:3000/travels/6476cfe056fda7e7314a9541
+
+###
+POST http://localhost:3000/travels HTTP/1.1
+Content-Type: application/json
+
+{ 
+  "place": "Port Hermannport",
+  "startDate": "2023-01-09T17:21:16.680Z",
+  "endDate": "2023-10-13T19:22:29.770Z",
+  "notes": "Natus doloribus necessitatibus eius ducimus quibusdam ipsa cum in corrupti. Sed nihil fuga omnis labore tempore voluptas quis perspiciatis recusandae. Numquam qui enim porro alias.",
+  "imageUrl": "https://picsum.photos/seed/fJFiX8/640/480"
+}
+
+### Update travel
+PUT http://localhost:3000/travels/6476cfe056fda7e7314a9541 HTTP/1.1
+Content-Type: application/json
+
+{ 
+  "place": "Port Hermannport - Update"
+}
+
+### Delete travel
+DELETE http://localhost:3000/travels/6476cfe056fda7e7314a9541 HTTP/1.1
